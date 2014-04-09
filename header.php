@@ -33,6 +33,8 @@
 			<?php endif; // End header image check. ?>
 		<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1></a>
 		<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+		<!-- Primary Menu -->
+		<?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
