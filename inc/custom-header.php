@@ -4,13 +4,6 @@
  * http://codex.wordpress.org/Custom_Headers
  *
  * You can add an optional custom header image to header.php like so ...
-
-	<?php if ( get_header_image() ) : ?>
-	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-		<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
-	</a>
-	<?php endif; // End header image check. ?>
-
  *
  * @package cJewelry
  */
@@ -24,15 +17,16 @@
  */
 function cjewelry_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'cjewelry_custom_header_args', array(
-		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 0,
-		'height'                 => 0,
+		'width'                  => 400,
+		'height'                 => 245,
 		'flex-height'            => true,
+		'flex-width'             => true,
 		'wp-head-callback'       => 'cjewelry_header_style',
 		'admin-head-callback'    => 'cjewelry_admin_header_style',
 		'admin-preview-callback' => 'cjewelry_admin_header_image',
 		'uploads'                => 'true',
+		'default-image'          => get_template_directory_uri() . '/images/header.jpg',
 	) ) );
 }
 add_action( 'after_setup_theme', 'cjewelry_custom_header_setup' );
