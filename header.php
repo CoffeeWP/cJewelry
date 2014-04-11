@@ -28,12 +28,13 @@
 	<header id="masthead" class="site-header" role="banner">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 		<?php if ( get_header_image() ) : ?>
+			<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+		<?php endif; // End header image check. ?>
 
-				<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
-			<?php endif; // End header image check. ?>
 		<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1></a>
 		<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		<!-- Primary Menu -->
+		<hr>
 		<?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
 	</header><!-- #masthead -->
 

@@ -674,7 +674,7 @@ div {
 
 .site-header {
 	font-family: 'Oswald', sans-serif;
-	text-align: center;
+	text-align: left;
 	margin-top: 20px;
 }
 
@@ -684,7 +684,9 @@ div {
 
 .site-header .site-description{
 	font-size: 1em;
-	text-align: center;
+	margin-top: 3px;
+	margin-bottom: 20px;
+	text-align: left;
 }
 
 .post {
@@ -753,12 +755,13 @@ footer.site-footer {
 
 /* Menu */
 .menu {
-	margin-top: 25px;
-	text-align: center;
+	margin-top: 20px;
+	text-align: left;
 }
 
 .menu ul {
 	list-style: none;
+	margin: 0px;
 }
 
 .menu li {
@@ -767,6 +770,11 @@ footer.site-footer {
 
 .menu li:not(:first-child):before {
 	content: '|';
-	margin-left: 4px;
-	margin-right: 6px;
+	margin-left: 20px;
+	margin-right: 20px;
+	color: #666666;
+}
+
+.menu a{
+	color: #666666;
 }
