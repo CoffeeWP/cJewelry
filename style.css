@@ -770,3 +770,8 @@ footer.site-footer {
 	margin-left: 4px;
 	margin-right: 6px;
 }
+
+.slider-replacment {
+	border: 2px solid #ffce64;
+	border-radius: 5px;
+}
