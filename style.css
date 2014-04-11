@@ -778,3 +778,8 @@ footer.site-footer {
 .menu a{
 	color: #666666;
 }
+
+.slider-replacment {
+	border: 2px solid #ffce64;
+	border-radius: 5px;
+}
