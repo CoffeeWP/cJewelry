@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<div class="sliderReplacment">
+<div class="sliderReplacement">
 	<img src="<?php echo get_template_directory_uri() . '/images/slider-replacment.jpg' ?>">
 	<div class="overlay">
 		<div class="text">
