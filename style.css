@@ -797,10 +797,10 @@ footer.site-footer {
 	margin-left: 7em;
 }
 
-.menu > li:not(:first-child)	{
+.menu > li:not(:first-child) { 
 	margin: 0 0 20px 20px;
 	padding-left: 20px;
-	border-left: 1px solid #D1D1D1;
+	border-left: 1px solid #D1D1D1; 
 }
 
 .menu li > ul{
@@ -846,6 +846,10 @@ footer.site-footer {
 
 .sub-menu li:not(:last-child){
 	padding-bottom: 8px;
+}
+
+.sub-menu .menu-item-has-children:after{
+	content: ">";
 }
 
 .slider-replacment {
