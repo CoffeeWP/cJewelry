@@ -771,7 +771,9 @@ footer.site-footer {
 	text-align: left;
 	margin-left: 25px;
 	margin-top: 20px;
-
+	list-style: none;
+	text-transform: capitalize;
+	letter-spacing:0.2em;
 }
 
 .menu ul {
@@ -780,17 +782,38 @@ footer.site-footer {
 
 
 .menu li {
-	display: inline;
+	float:left;
+	position:relative;
+	line-height: 1.5em;
+
+}
+
+.menu li ul {
+	position:absolute;
+	display:none;
+}
+.menu ul li ul {
+	margin-top: -3em;
+	margin-left: 7em;
 }
 
 .menu > li:not(:first-child)	{
-	margin-left: 20px;
+	margin: 0 0 20px 20px;
 	padding-left: 20px;
-	border-left:1px solid #D1D1D1;
+	border-left: 1px solid #D1D1D1;
+}
+
+.menu li > ul{
+	display: block;
+	visibility:hidden;
+	opacity:0;
+	transition:visibility 0s linear 0.9s,opacity 0.3s linear;
 }
 
 .menu li:hover > ul{
-	display: block;
+	visibility:visible;
+	opacity:1;
+	transition-delay:0s;
 }
 
 .menu a{
@@ -802,25 +825,27 @@ footer.site-footer {
 	background: white;
 	position: absolute;
 	width: 200px;
-	border: 1px solid black;
-	/* This works in IE 8 & 9 too */
-	/* ... but also 5, 6, 7 */
-	filter: alpha(opacity=50);
-
-	/* Older than Firefox 0.9 */
-	-moz-opacity:0.5;
-
-	/* Safari 1.x (pre WebKit!) */
-	-khtml-opacity: 0.5;
-
-	/* Modern!
-	/* Firefox 0.9+, Safari 2?, Chrome any?
-	/* Opera 9+, IE 9+ */
-	opacity: 0.5;
+	border: 1px solid #D1D1D1;
+	background-color:rgba(255,255,255);
+	padding: 10px;
 }
 
-.sub-menu li {
+.sub-menu ul{
+	position:absolute;
+	margin-top:-1em;
+	margin-left: 0.5em;
+	display: none;
+}
+
+.sub-menu li:not(:first-child) {
 	display: block;
+	width: 100%;
+	border-top: 1px solid #D1D1D1;
+	padding-top: 8px;
+}
+
+.sub-menu li:not(:last-child){
+	padding-bottom: 8px;
 }
 
 .sliderReplacment {
