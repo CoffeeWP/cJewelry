@@ -806,13 +806,13 @@ footer.site-footer {
 	/* This works in IE 8 & 9 too */
 	/* ... but also 5, 6, 7 */
 	filter: alpha(opacity=50);
-	
+
 	/* Older than Firefox 0.9 */
 	-moz-opacity:0.5;
-	
+
 	/* Safari 1.x (pre WebKit!) */
 	-khtml-opacity: 0.5;
-    
+
 	/* Modern!
 	/* Firefox 0.9+, Safari 2?, Chrome any?
 	/* Opera 9+, IE 9+ */
@@ -823,8 +823,32 @@ footer.site-footer {
 	display: block;
 }
 
+.sliderReplacment {
+	position: relative;
+}
 
-.slider-replacment {
+.sliderReplacment img {
 	border: 2px solid #ffce64;
 	border-radius: 5px;
+}
+
+
+.sliderReplacment .overlay {
+	background-color: rgba(0, 0, 0, 0.2);
+	left: 62%;
+	position: absolute;
+	top: 25%;
+	color: #ffce64;
+	width:30%;
+	height:45%;
+}
+
+.sliderReplacment .overlay .text {
+	width: 50%;
+	height: 50%;
+	overflow: hidden;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	text-align: center;
 }

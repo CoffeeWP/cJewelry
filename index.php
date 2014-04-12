@@ -13,7 +13,14 @@
 
 get_header(); ?>
 
-<img src="<?php echo get_template_directory_uri() . '/images/slider-replacment.jpg' ?>" class="slider-replacment">
+<div class="sliderReplacment">
+	<img src="<?php echo get_template_directory_uri() . '/images/slider-replacment.jpg' ?>">
+	<div class="overlay">
+		<div class="text">
+			Shop with us, get more customers
+		</div>
+	</div>
+</div>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
