@@ -883,3 +883,13 @@ h2.comments-title {
 .my-cart a{
 	color: #666666;
 }
+
+/* Footer */
+.site-footer{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #f8f8f8;
+    padding: 10px;
+    border-top: 5px solid #ffe094;
+}

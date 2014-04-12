@@ -17,9 +17,9 @@
 	<!--[if IE]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Oswald:400,700' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Oswald:400,700' rel='stylesheet' type='text/css'>
 
-<?php wp_head(); ?>
+	<?php wp_head(); ?>
 </head>
 
 </html>
@@ -33,12 +33,12 @@
 		<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1></a>
 		<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		<?php global $woocommerce; ?>
- 
+
 		<div class="my-cart">
 			<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/cart-icon.png" />
-			<?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> - 
-			<?php echo $woocommerce->cart->get_cart_total(); ?>
+				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/cart-icon.png" />
+				<?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> - 
+				<?php echo $woocommerce->cart->get_cart_total(); ?>
 			</a>
 		</div>
 		<div class="hr"></div>
