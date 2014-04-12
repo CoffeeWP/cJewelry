@@ -33,7 +33,6 @@
 		<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1></a>
 		<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		<?php global $woocommerce; ?>
-
 		<div class="my-cart">
 			<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
 				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/cart-icon.png" />

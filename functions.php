@@ -79,7 +79,7 @@ function cjewelry_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => __( 'Footer1', 'cjewelry' ),
+		'name'          => __( 'Footer 1', 'cjewelry' ),
 		'id'            => 'widgetfooter1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -87,7 +87,7 @@ function cjewelry_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Footer2', 'cjewelry' ),
+		'name'          => __( 'Footer 2', 'cjewelry' ),
 		'id'            => 'widgetfooter2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -95,7 +95,7 @@ function cjewelry_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Footer3', 'cjewelry' ),
+		'name'          => __( 'Footer 3', 'cjewelry' ),
 		'id'            => 'widgetfooter3',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -103,7 +103,7 @@ function cjewelry_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Footer4', 'cjewelry' ),
+		'name'          => __( 'Footer 4', 'cjewelry' ),
 		'id'            => 'widgetfooter4',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',

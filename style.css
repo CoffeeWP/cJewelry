@@ -655,7 +655,8 @@ body {
 	line-height:1.231;
 	max-width: 900px;
 	margin: 0 auto;
-	/*color: black;*/
+	font-family: 'Oswald';
+	color: #666666;
 }
 
 a {
@@ -892,4 +893,25 @@ h2.comments-title {
     background: #f8f8f8;
     padding: 10px;
     border-top: 5px solid #ffe094;
+}
+
+.warp-footer{
+	display: block;
+	width: 900px;
+	margin:0 auto;
+}
+
+.widget-footer{
+	float: left;
+	width:24%;
+}
+
+.widget-footer .widget-title{
+	margin-bottom: 8px;
+}
+
+.site-info{
+	font-size: 0.9em;
+	letter-spacing: 0.07em;
+	text-align: center;
 }
