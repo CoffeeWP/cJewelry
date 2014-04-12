@@ -771,25 +771,58 @@ footer.site-footer {
 	text-align: left;
 	margin-left: 25px;
 	margin-top: 20px;
+
 }
 
 .menu ul {
 	list-style: none;
 }
 
+
 .menu li {
 	display: inline;
 }
 
-.menu li:not(:first-child)	{
+.menu > li:not(:first-child)	{
 	margin-left: 20px;
 	padding-left: 20px;
 	border-left:1px solid #D1D1D1;
 }
 
+.menu li:hover > ul{
+	display: block;
+}
+
 .menu a{
 	color: #666666;
 }
+
+.sub-menu{
+	display: none;
+	background: white;
+	position: absolute;
+	width: 200px;
+	border: 1px solid black;
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=50);
+	
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.5;
+	
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.5;
+    
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 0.5;
+}
+
+.sub-menu li {
+	display: block;
+}
+
 
 .slider-replacment {
 	border: 2px solid #ffce64;
