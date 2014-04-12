@@ -881,3 +881,12 @@ footer.site-footer {
 	top: 0; left: 0; bottom: 0; right: 0;
 	text-align: center;
 }
+
+.my-cart{
+	float: right;
+    margin-top: -35px;
+    font-size: 0.9em;
+}
+.my-cart a{
+	color: #666666;
+}
