@@ -772,7 +772,7 @@ footer.site-footer {
 	margin-left: 25px;
 	margin-top: 20px;
 	list-style: none;
-	text-transform: capitalize; 
+	text-transform: capitalize;
 	letter-spacing:0.2em;
 }
 
@@ -853,6 +853,31 @@ footer.site-footer {
 }
 
 .slider-replacment {
+	position: relative;
+}
+
+.slider-replacment img {
 	border: 2px solid #ffce64;
 	border-radius: 5px;
+}
+
+
+.slider-replacment .overlay {
+	background-color: rgba(0, 0, 0, 0.2);
+	left: 62%;
+	position: absolute;
+	top: 25%;
+	color: #ffce64;
+	width:30%;
+	height:45%;
+}
+
+.slider-replacment .overlay .text {
+	width: 50%;
+	height: 50%;
+	overflow: hidden;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	text-align: center;
 }
