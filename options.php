@@ -105,13 +105,21 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __('Basic Settings', 'options_framework_theme'),
         'type' => 'heading');
+
     $options[] = array(
         'name' => __('Content text on front page', 'cjewelry'),
-        'type' => __('Appears on the front page on top of the main image'),
+        'type' => __('Appears on the front page on top of the main image', 'cjewelry'),
         'id' => 'slider_replacment_overlay_text',
         'std' => 'Beautiful Jewelry theme, WooCommerce ready',
         'type' => 'text'
         );
+
+    $options[] = array(
+        'name' => __('Theme Color', 'cjewelry'),
+        'desc' => __('This color will appear throughout the theme.', 'options_framework_theme'),
+        'id' => 'theme_colorpicker',
+        'std' => '#ffe094',
+        'type' => 'color' );
 
     $options[] = array(
         'name' => __('Input Text Mini', 'options_framework_theme'),

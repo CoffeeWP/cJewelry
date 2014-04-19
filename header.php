@@ -25,6 +25,20 @@
 
 		});
 	</script>
+
+	<style type="text/css">
+	.sliderReplacement img {
+		border: 2px solid <?php echo of_get_option('theme_colorpicker', '#ffe094'); ?>;
+	}
+
+	.sliderReplacement .overlay .text {
+		color: <?php echo of_get_option('theme_colorpicker', '#ffe094'); ?>;
+	}
+
+	.site-footer {
+		border-top: 5px solid <?php echo of_get_option('theme_colorpicker', '#ffe094'); ?>;
+	}
+	</style>
 </head>
 
 </html>
