@@ -22,8 +22,23 @@
 	<?php wp_head(); ?>
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
+			jQuery('.sticky-menu').fadeOut("fast");
 
+			var windowH = jQuery(window).height();
+			var stickToBot = 160;
+
+			jQuery(window).scroll(function() {
+				var scrollVal = jQuery(this).scrollTop();
+
+				if ( scrollVal > stickToBot ) {
+					jQuery('.sticky-menu').fadeIn("fast");
+				} else {
+					jQuery(".sticky-menu").fadeOut("fast");
+				}
+			});
 		});
+
+
 	</script>
 
 	<style type="text/css">
@@ -41,11 +56,12 @@
 	</style>
 </head>
 
-</html>
 
-<body <?php body_class(); ?>>
-	<header id="masthead" class="site-header" role="banner">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+	</html>
+
+	<body <?php body_class(); ?>>
+		<header id="masthead" class="site-header" role="banner">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 <!-- 		<?php if ( get_header_image() ) : ?>
 			<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
 		<?php endif; // End header image check. ?> -->

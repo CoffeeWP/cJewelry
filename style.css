@@ -881,8 +881,8 @@ h2.comments-title {
 
 .my-cart{
 	float: right;
-    margin-top: -35px;
-    font-size: 0.9em;
+	margin-top: -35px;
+	font-size: 0.9em;
 }
 .my-cart a{
 	color: #666666;
@@ -890,11 +890,11 @@ h2.comments-title {
 
 /* Footer */
 .site-footer{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background: #f8f8f8;
-    padding: 10px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: #f8f8f8;
+	padding: 10px;
 }
 
 .warp-footer{
@@ -922,11 +922,17 @@ h2.comments-title {
 .sticky-menu{
 	position: fixed;
 	width: 100%;
-	background-color: #fff;
+	height: 40px;
+	padding-left: 20%;
 	top: 0;
+	left: 0;
+	background-color: #fff;
+	border-bottom:2px solid #B8B8B8;
 	z-index: 99999999;
 }
-
+.sticky-menu .menu{
+	margin-top: -15px;
+}
 .admin-bar .sticky-menu{
 	top: 32px;
 }
