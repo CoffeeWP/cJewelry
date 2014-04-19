@@ -17,7 +17,7 @@ get_header(); ?>
 	<img src="<?php echo get_template_directory_uri() . '/images/slider-replacment.jpg' ?>">
 	<div class="overlay">
 		<div class="text">
-			Shop with us, get more customers
+			<?php echo of_get_option('slider_replacment_overlay_text', 'test'); ?>
 		</div>
 	</div>
 </div>
