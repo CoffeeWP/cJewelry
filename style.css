@@ -699,6 +699,11 @@ div {
 	margin: 10px 0;
 }
 
+.hr.onethird {
+	display: inline-block;
+	width: 33%;
+}
+
 .post {
 	font-family: 'Open-Sans', sans-serif;
 	font-size: 18px;
@@ -924,4 +929,16 @@ h2.comments-title {
 
 .admin-bar .sticky-menu{
 	top: 32px;
+}
+
+/* Products Slider */
+.products.header {
+	margin-top: 20px;
+}
+
+.products.header .text {
+	font-size: 1.2em;
+	display: inline-block;
+	text-align: center;
+	width: 33%;
 }
