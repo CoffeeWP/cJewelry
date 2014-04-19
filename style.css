@@ -851,7 +851,6 @@ h2.comments-title {
 }
 
 .sliderReplacement img {
-	border: 2px solid #ffce64;
 	border-radius: 5px;
 }
 
@@ -861,7 +860,6 @@ h2.comments-title {
 	left: 62%;
 	position: absolute;
 	top: 25%;
-	color: #ffce64;
 	width:30%;
 	height:45%;
 }
@@ -892,7 +890,6 @@ h2.comments-title {
 	width: 100%;
 	background: #f8f8f8;
 	padding: 10px;
-	border-top: 5px solid #ffe094;
 }
 
 .warp-footer{
