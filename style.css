@@ -779,7 +779,7 @@ h2.comments-title {
 	float:left;
 	position:relative;
 	line-height: 1.5em;
-	z-index: 99999999;
+	z-index: 99;
 }
 
 .menu li ul {
@@ -914,4 +914,17 @@ h2.comments-title {
 	font-size: 0.9em;
 	letter-spacing: 0.07em;
 	text-align: center;
+}
+
+/* Sticky Menu */
+.sticky-menu{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	top: 0;
+	z-index: 99999999;
+}
+
+.admin-bar .sticky-menu{
+	top: 32px;
 }

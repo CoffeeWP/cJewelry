@@ -20,6 +20,11 @@
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Oswald:400,700' rel='stylesheet' type='text/css'>
 
 	<?php wp_head(); ?>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+
+		});
+	</script>
 </head>
 
 </html>
@@ -43,6 +48,9 @@
 		<div class="hr"></div>
 		<!-- Primary Menu -->
 		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		<div class="sticky-menu">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		</div>
 	</header><!-- #masthead -->
 
 
