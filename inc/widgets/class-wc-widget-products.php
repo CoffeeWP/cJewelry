@@ -179,8 +179,8 @@ if ($woocommerce_installed) {
 				}
 
 				echo '</ul></div>';
-				echo '<a href="#" class="jcarousel-control-prev">‹</a>';
-				echo '<a href="#" class="jcarousel-control-next">›</a>';
+				echo '<div href="#" class="jcarousel-control-prev">‹</div>';
+				echo '<div href="#" class="jcarousel-control-next">›</div>';
 				echo "</div>";
 
 				echo $after_widget;

@@ -56,6 +56,7 @@
     text-decoration: none;
     text-shadow: 0 0 1px #000;
     font: 24px/27px Arial, sans-serif;
+    cursor: pointer;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
@@ -115,3 +116,4 @@
     -moz-box-shadow: 0 0 2px #F0EFE7;
     box-shadow: 0 0 2px #F0EFE7;
 }
+
