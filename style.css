@@ -762,12 +762,12 @@ h2.comments-title {
 
 /* Menu */
 .menu {
-	text-align: left;
+	text-align: center;
 	margin-left: 25px;
 	margin-top: 20px;
 	list-style: none;
 	text-transform: capitalize;
-	letter-spacing:0.2em;
+	letter-spacing: 0.2em;
 }
 
 .menu ul {
@@ -776,15 +776,15 @@ h2.comments-title {
 
 
 .menu li {
-	float:left;
-	position:relative;
+	display: inline-block;
+	position: relative;
 	line-height: 1.5em;
 	z-index: 99;
 }
 
 .menu li ul {
-	position:absolute;
-	display:none;
+	position: absolute;
+	display: none;
 }
 .menu ul li ul {
 	margin-top: -3em;
@@ -917,13 +917,15 @@ h2.comments-title {
 .sticky-menu{
 	position: fixed;
 	width: 100%;
-	padding-left: 20%;
-	padding-right: 20%;
 	top: 0;
 	left: 0;
 	background-color: #fff;
 	border-bottom:2px solid #B8B8B8;
-	z-index: 99999999;
+	z-index: 100;
+}
+.sticky-menu .menu{
+	width: 80%;
+	margin: 25px auto 0px;
 }
 
 .admin-bar .sticky-menu{
@@ -932,52 +934,52 @@ h2.comments-title {
 
 /* Shop */
 .frame-top {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin: 20px;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: 20px;
 }
 .frame-top:before {
-    display: block;
-    content: "";
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    border-top: 1px solid #000;
-    border-left: 1px solid #000;
+	display: block;
+	content: "";
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
 }
 .frame-top:after {
-    display: block;
-    content: "";
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    border-top: 1px solid #000;
-    border-right: 1px solid #000;
+	display: block;
+	content: "";
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
 }
 .frame-bottom:before {
-    display: block;
-    content: "";
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    bottom: -10px;
-    left: -10px;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
+	display: block;
+	content: "";
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	bottom: -10px;
+	left: -10px;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
 }
 .farme-bottom:after {
-    display: block;
-    content: "";
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    bottom: -10px;
-    right: -10px;
-    border-bottom: 1px solid #000;
-    border-right: 1px solid #000;
+	display: block;
+	content: "";
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
 }
