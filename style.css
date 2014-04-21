@@ -846,6 +846,27 @@ h2.comments-title {
 	content: ">";
 }
 
+/* Shop by menu */
+.shop-by-menu{
+	padding: 10px;
+	height: 80px;
+	background-color: #E9E9E9;
+	border-bottom: 4px solid #DADADA;
+}
+
+.price-range-wiget{
+	width: 100px;
+}
+.ui-slider-handle.ui-state-default.ui-corner-all{
+	height: 19px;
+	width: 13px;
+}
+.price-range-wiget #amount{
+	pointer-events: none;
+	background-color: #E9E9E9;
+	border: none;
+}
+
 .sliderReplacement {
 	position: relative;
 }

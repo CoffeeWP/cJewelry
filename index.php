@@ -12,7 +12,21 @@
  */
 
 get_header(); ?>
-
+<script>
+	jQuery(function() {
+		jQuery( "#slider-range" ).slider({
+			range: true,
+			min: 0,
+			max: 500,
+			values: [ 75, 300 ],
+			slide: function( event, ui ) {
+				jQuery( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+			}
+		});
+		jQuery( "#amount" ).val( "$" + jQuery( "#slider-range" ).slider( "values", 0 ) +
+			" - $" + jQuery( "#slider-range" ).slider( "values", 1 ) );
+	});
+</script>
 <div class="sliderReplacement">
 	<img src="<?php echo get_template_directory_uri() . '/images/slider-replacment.jpg' ?>">
 	<div class="overlay">
@@ -24,7 +38,13 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-
+		<div class="shop-by-menu">
+			<div class="price-range-wiget">
+				<label for="amount">Price Range: </label>
+				<input id="amount">
+				<div id="slider-range"></div>
+			</div>
+		</div>
 
 		<?php if ( have_posts() ) : ?>
 			<div class="products header">
