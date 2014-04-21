@@ -37,8 +37,6 @@
 				}
 			});
 		});
-
-
 	</script>
 
 	<style type="text/css">
@@ -54,6 +52,7 @@
 		border-top: 5px solid <?php echo of_get_option('theme_colorpicker', '#ffe094'); ?>;
 	}
 	</style>
+
 </head>
 
 

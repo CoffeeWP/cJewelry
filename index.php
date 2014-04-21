@@ -33,6 +33,8 @@ get_header(); ?>
 				<div class="hr onethird"></div>
 			</div>
 
+			<?php if ( dynamic_sidebar('mainpage_widget_area') ) : else : endif; ?>
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) :  the_post(); ?>
 

@@ -12,6 +12,9 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
+// Checks if WooCommerce is installed
+$woocommerce_installed = in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) );
+
 if ( ! function_exists( 'cjewelry_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -110,6 +113,17 @@ function cjewelry_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
+	register_sidebar( array(
+			'name'          => __( 'Main Page', 'cjewelry' ),
+			'id'            => 'mainpage_widget_area',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h1 class="widget-title">',
+			'after_title'   => '</h1>',
+		) );
+
+	require_once dirname( __FILE__ ) . '/inc/widgets.php'; 
 }
 add_action( 'widgets_init', 'cjewelry_widgets_init' );
 
