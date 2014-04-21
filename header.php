@@ -9,6 +9,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
@@ -20,6 +21,8 @@
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Oswald:400,700' rel='stylesheet' type='text/css'>
 
 	<?php wp_head(); ?>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			jQuery('.sticky-menu').fadeOut("fast");
@@ -40,27 +43,25 @@
 	</script>
 
 	<style type="text/css">
-	.sliderReplacement img {
-		border: 2px solid <?php echo of_get_option('theme_colorpicker', '#ffe094'); ?>;
-	}
+		.sliderReplacement img {
+			border: 2px solid <?php echo of_get_option('theme_colorpicker', '#ffe094'); ?>;
+		}
 
-	.sliderReplacement .overlay .text {
-		color: <?php echo of_get_option('theme_colorpicker', '#ffe094'); ?>;
-	}
+		.sliderReplacement .overlay .text {
+			color: <?php echo of_get_option('theme_colorpicker', '#ffe094'); ?>;
+		}
 
-	.site-footer {
-		border-top: 5px solid <?php echo of_get_option('theme_colorpicker', '#ffe094'); ?>;
-	}
+		.site-footer {
+			border-top: 5px solid <?php echo of_get_option('theme_colorpicker', '#ffe094'); ?>;
+		}
 	</style>
 
 </head>
+</html>
 
-
-	</html>
-
-	<body <?php body_class(); ?>>
-		<header id="masthead" class="site-header" role="banner">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+<body <?php body_class(); ?>>
+	<header id="masthead" class="site-header" role="banner">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 <!-- 		<?php if ( get_header_image() ) : ?>
 			<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
 		<?php endif; // End header image check. ?> -->
