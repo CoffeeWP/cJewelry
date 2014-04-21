@@ -893,13 +893,13 @@ h2.comments-title {
 }
 
 .warp-footer{
-	display: block;
+	text-align: center;
 	width: 900px;
 	margin:0 auto;
 }
 
 .widget-footer{
-	float: left;
+	display: inline-block;
 	width:24%;
 }
 
