@@ -27,7 +27,11 @@ get_header(); ?>
 
 
 		<?php if ( have_posts() ) : ?>
-
+			<div class="products header">
+				<div class="hr onethird"></div>
+				<div class="text">- <?php echo __('New Products', 'cjewelry') ?> -</div>
+				<div class="hr onethird"></div>
+			</div>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) :  the_post(); ?>

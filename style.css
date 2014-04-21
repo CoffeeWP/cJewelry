@@ -699,6 +699,11 @@ div {
 	margin: 10px 0;
 }
 
+.hr.onethird {
+	display: inline-block;
+	width: 33%;
+}
+
 .post {
 	font-family: 'Open-Sans', sans-serif;
 	font-size: 18px;
@@ -932,6 +937,7 @@ h2.comments-title {
 	top: 32px;
 }
 
+<<<<<<< HEAD
 /* Shop */
 .frame-top {
     position: relative;
@@ -983,3 +989,16 @@ h2.comments-title {
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
 }
+=======
+/* Products Slider */
+.products.header {
+	margin-top: 20px;
+}
+
+.products.header .text {
+	font-size: 1.2em;
+	display: inline-block;
+	text-align: center;
+	width: 33%;
+}
+>>>>>>> 03886a1bb795f029461bd14b051ab88a57428758
