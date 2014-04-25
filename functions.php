@@ -115,13 +115,13 @@ function cjewelry_widgets_init() {
 	) );
 
 	register_sidebar( array(
-			'name'          => __( 'Main Page', 'cjewelry' ),
-			'id'            => 'mainpage_widget_area',
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h1 class="widget-title">',
-			'after_title'   => '</h1>',
-		) );
+		'name'          => __( 'Main Page', 'cjewelry' ),
+		'id'            => 'mainpage_widget_area',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
 
 	require_once dirname( __FILE__ ) . '/inc/widgets.php'; 
 }
@@ -136,6 +136,8 @@ function cjewelry_scripts() {
 	wp_enqueue_script( 'cjewelry-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'cjewelry-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+
+	wp_enqueue_script('cjewelry-products', get_template_directory_uri() . '/js/products.js', array(), 20140421, true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

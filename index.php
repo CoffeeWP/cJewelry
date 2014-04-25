@@ -47,11 +47,6 @@ get_header(); ?>
 		</div>
 
 		<?php if ( have_posts() ) : ?>
-			<div class="products header">
-				<div class="hr onethird"></div>
-				<div class="text">- <?php echo __('New Products', 'cjewelry') ?> -</div>
-				<div class="hr onethird"></div>
-			</div>
 
 			<?php if ( dynamic_sidebar('mainpage_widget_area') ) : else : endif; ?>
 

@@ -168,8 +168,11 @@ if ($woocommerce_installed) {
 
 				echo $before_widget;
 
-				if ( $title )
-					echo $before_title . $title . $after_title;
+				if ( $title ) {
+					echo '<div class="hr onethird"></div>';
+					echo  $before_title . '- ' . $title . ' -' . $after_title;
+					echo '<div class="hr onethird"></div>';
+				}
 
 				echo '<div class="jcarousel-wrapper"><div class="jcarousel"><ul class="product_list_widget">';
 
@@ -192,7 +195,6 @@ if ($woocommerce_installed) {
 
 			echo $content;
 
-			wp_enqueue_style( 'widget-products', get_template_directory_uri() . '/inc/widgets/css/widget-products.css' );
 			wp_enqueue_script( 'widget-products', get_template_directory_uri() . '/inc/widgets/js/widget-products.js' );
 			wp_enqueue_script( 'jcarousel', get_template_directory_uri() . '/inc/widgets/js/jquery.jcarousel.js' );
 
