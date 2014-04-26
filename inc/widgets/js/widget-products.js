@@ -15,7 +15,11 @@
                 jcarousel.jcarousel('items').css('width', width + 'px');
             })
             .jcarousel({
-                wrap: 'circular'
+                wrap: 'circular',
+                animation: {
+                    duration: 500,
+                    easing: 'easeInOutQuart'
+                }
             });
 
         $('.jcarousel-control-prev')

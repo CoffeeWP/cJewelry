@@ -963,9 +963,10 @@ h2.comments-title {
 /* Products */
 .frame-top {
 	position: relative;
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 200px;
 	margin: 20px;
+	text-align: center;
 }
 .frame-top:before {
 	display: block;
@@ -990,7 +991,7 @@ h2.comments-title {
 	border-right: 1px solid lightgrey;
 }
 .frame-bottom {
-	min-height: 150px;
+	min-height: 230px;
 }
 .frame-bottom:before {
 	display: block;
@@ -1038,6 +1039,7 @@ h2.comments-title {
     position: relative;
     overflow: hidden;
     width: 100%;
+    margin-left: 50px;
 }
 
 .jcarousel ul {
@@ -1064,6 +1066,20 @@ h2.comments-title {
 }
 
 /** Carousel Controls **/
+
+.jcarousel-control-prev, .jcarousel-control-next {
+	opacity: 0;
+	transition: opacity .35s ease-in-out;
+	-moz-transition: opacity .35s ease-in-out;
+	-webkit-transition: opacity .35s ease-in-out;
+}
+
+.jcarousel-wrapper:hover .jcarousel-control-prev, .jcarousel-wrapper:hover .jcarousel-control-next {
+	opacity: 1;
+	transition: opacity .35s ease-in-out;
+	-moz-transition: opacity .35s ease-in-out;
+	-webkit-transition: opacity .35s ease-in-out;
+}
 
 .jcarousel-control-prev,
 .jcarousel-control-next {
@@ -1148,4 +1164,45 @@ h2.comments-title {
 	display: inline-block;
 	text-align: center;
 	width: 33%;
+}
+
+.product {
+	text-align: center;
+	position: relative;
+}
+
+.product a {
+	margin-bottom: 5px;
+	display: block;
+}
+
+.product .buttonWrapper {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.product .button {
+	width: 45%;
+	height: 30px;
+	display: inline-block;
+	background-color: lightgray;
+	font-size: 0.8em;
+	transition: background-color .35s ease-in-out;
+	-moz-transition: background-color .35s ease-in-out;
+	-webkit-transition: background-color .35s ease-in-out;
+}
+
+.product .button:hover {
+	transition: background-color .35s ease-in-out;
+	-moz-transition: background-color .35s ease-in-out;
+	-webkit-transition: background-color .35s ease-in-out;
+}
+
+.product .button:before {
+	content: ' ';
+	vertical-align: middle;
+	height: 100%;
+	display: inline-block;
 }

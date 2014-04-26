@@ -8,6 +8,10 @@
             </a>
             <?php if ( ! empty( $show_rating ) ) echo $product->get_rating_html(); ?>
             <?php echo $product->get_price_html(); ?>
+            <div class="buttonWrapper">
+                <div class="button">Add to Cart</div>
+                <div class="button">Details</div>
+            </div>
         </div>
     </div>
 </li>

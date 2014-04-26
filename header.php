@@ -54,6 +54,9 @@
 		.site-footer {
 			border-top: 5px solid <?php echo of_get_option('theme_colorpicker', '#ffe094'); ?>;
 		}
+		.product .button:hover {
+			background-color: <?php echo of_get_option('theme_colorpicker', '#ffe094'); ?>;
+		}
 	</style>
 
 </head>
